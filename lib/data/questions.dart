@@ -33,4 +33,46 @@ final Map<String, List<Map<String, Object>>> questionsBySubject = {
       'wrongFeedback': 'Oops! Try again next time! 🚀',
     },
   ],
+  'Animals & Nature': [
+  {
+    'question': 'Which animal is known as the king of the jungle?',
+    'options': ['Lion', 'Tiger', 'Elephant', 'Giraffe'],
+    'answer': 'Lion',
+  },
+  {
+    'question': 'What do bees make?',
+    'options': ['Milk', 'Silk', 'Honey', 'Wax'],
+    'answer': 'Honey',
+  },
+  {
+    'question': 'What is the tallest land animal?',
+    'options': ['Elephant', 'Giraffe', 'Horse', 'Camel'],
+    'answer': 'Giraffe',
+  },
+  {
+    'question': 'Which ocean is the largest?',
+    'options': ['Atlantic', 'Indian', 'Arctic', 'Pacific'],
+    'answer': 'Pacific',
+  },
+  {
+    'question': 'What do pandas mostly eat?',
+    'options': ['Bamboo', 'Fish', 'Fruits', 'Grass'],
+    'answer': 'Bamboo',
+  },
+  {
+    'question': 'Which part of a plant absorbs water?',
+    'options': ['Stem', 'Roots', 'Leaves', 'Flower'],
+    'answer': 'Roots',
+  },
+  {
+    'question': 'What kind of animal is a Komodo dragon?',
+    'options': ['Lizard', 'Snake', 'Frog', 'Bird'],
+    'answer': 'Lizard',
+  },
+  {
+    'question': 'How many legs does a spider have?',
+    'options': ['6', '8', '10', '12'],
+    'answer': '8',
+  },
+],
 };

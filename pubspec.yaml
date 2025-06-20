@@ -12,6 +12,9 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   audioplayers: ^5.2.1
+  google_fonts: ^6.1.0
+  confetti: ^0.7.0
+
 
 dev_dependencies:
   flutter_test:
