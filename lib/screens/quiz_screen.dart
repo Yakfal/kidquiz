@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import '../data/questions.dart';
-
+import '../sound/sound_manager.dart';
 class QuizScreen extends StatefulWidget {
   final String subject;
 
-  QuizScreen({required this.subject});
+   const QuizScreen({super.key, required this.subject});
 
   @override
   _QuizScreenState createState() => _QuizScreenState();
@@ -33,6 +33,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     if (currentQuestion >= questions.length) {
+      SoundManager.playCongratsSound();
       return Scaffold(
         appBar: AppBar(title: Text(widget.subject)),
         body: Center(
@@ -42,7 +43,10 @@ class _QuizScreenState extends State<QuizScreen> {
               Text('Your score: $score/${questions.length}', style: TextStyle(fontSize: 28)),
               SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () => Navigator.pop(context),
+                onPressed: () => {
+                  SoundManager.playClickSound(),
+                  Navigator.pop(context),
+                },
                 child: Text('Back to subjects'),
               ),
             ],
@@ -65,10 +69,13 @@ class _QuizScreenState extends State<QuizScreen> {
             ...(q['options'] as List<String>).map((option) => Padding(
               padding: const EdgeInsets.symmetric(vertical: 6),
               child: ElevatedButton(
-                onPressed: () => checkAnswer(option),
+                onPressed: () =>{
+                  SoundManager.playClickSound(),
+                  checkAnswer(option),
+                },
                 child: Text(option, style: TextStyle(fontSize: 20)),
               ),
-            )).toList(),
+            )),
           ],
         ),
       ),

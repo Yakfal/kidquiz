@@ -13,6 +13,7 @@ final Map<String, List<Map<String, Object>>> questionsBySubject = {
       'options': ['1', '2', '3', '4'],
       'answer': '2',
       'image': 'assets/images/math_subtract.png',
+      'wrongFeedback': 'Oops! Try again next time! 🚀',
     },
   ],
   'English': [
@@ -22,12 +23,14 @@ final Map<String, List<Map<String, Object>>> questionsBySubject = {
       'answer': 'Paris',
       'image': 'assets/images/paris.png',
       'correctFeedback': '✨ Paris is right! Well done!',
+      'wrongFeedback': 'Oops! Try again next time! 🚀',
     },
     {
       'question': '🐶 Which word is a noun?',
       'options': ['Run', 'Happy', 'Dog', 'Blue'],
       'answer': 'Dog',
       'sound': 'assets/sounds/bark.mp3',
+      'wrongFeedback': 'Oops! Try again next time! 🚀',
     },
   ],
 };
